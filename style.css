@@ -1,0 +1,122 @@
+body {
+  background: black;
+  color: white;
+}
+
+.container-fluid {
+  padding-left: 0px;
+}
+
+nav {
+  background: #212222;
+  padding: 5px 5px 0 10px;
+  margin-bottom: 10px;
+}
+
+#communities {
+  width: 100%;
+  background: #212222;
+  color: white;
+  border: none;
+}
+
+#searchContainer {
+  background: #424244;
+  border: 1px solid gray;
+  box-shadow: 0;
+  font-size: 10px;
+  padding: 0 10px 0 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+#searchField {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+#postRow {
+  background: #212222;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+
+#createPost {
+  background: #424244;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+#filterRow {
+  background: #212222;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.post {
+  /* border: 1px solid white; */
+  margin-bottom: 10px;
+}
+
+.voteCol {
+  /* background: #424244; */
+  background: #1a1c1c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.postCol {
+  background: #212222;
+}
+
+.postCol .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.postedBy {
+  font-size: 13px;
+}
+
+.postTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#upVote {
+  height: 20px;
+  width: 20px;
+}
+
+#downVote {
+  height: 20px;
+  width: 20px;
+}
+
+#voteCount {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#rIcon {
+  width: 25px;
+  height: 25px;
+}
