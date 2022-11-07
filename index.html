@@ -14,155 +14,146 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Reddit - Dive Into Anything</title>
+    <title>Check Ball!</title>
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="row">
-        <div class="col-1 d-flex align-items-center">
-          <img
-            src="img/Reddit-Horizontal-White-Logo.wine.png"
-            class="img-fluid"
-            id="logo"
-          />
-        </div>
-        <div class="col-2 d-flex align-items-center">
-          <select name="communities" id="communities">
-            <option value="">Home</option>
-            <option value="r/anime">r/anime</option>
-            <option value="r/PS5">r/PS5</option>
-            <option value="r/BattleStation">r/BattleStation</option>
-          </select>
-        </div>
-        <div class="col-5 d-flex align-items-center" id="searchContainer">
-          <span>🔍</span>
-          <input
-            type="search"
-            src="img/search-icon-transparent-images-vector-16.png"
-            id="searchField"
-            name="searchField"
-            placeholder="Search Reddit"
-          />
-        </div>
-        <div
-          class="col-2 d-flex justify-content-around align-items-center"
-          id="icons"
-        >
-          <span class="material-symbols-outlined"> north_east </span>
-          <span class="material-symbols-outlined"> monetization_on </span>
-          <span class="material-symbols-outlined"> sms </span>
-          <span class="material-symbols-outlined"> notifications </span>
-          <span class="material-symbols-outlined"> add </span>
-        </div>
-        <div class="col-2"></div>
-      </nav>
       <div class="row">
-        <div class="col-1"><!--Spacer --></div>
         <div class="col-6">
-          <div class="row" id="postRow">
-            <div class="col-1">
-              <span>
-                <img src="img/avatar.png" class="img-fluid" id="avatar" />
-              </span>
-            </div>
-            <div class="col-9">
-              <input
-                type="text"
-                id="createPost"
-                placeholder="    Create Post"
-              />
-            </div>
-            <div class="col-2"></div>
+          <div class="row d-flex justify-content-center" id="logoRow">
+            CHECK BALL!
           </div>
-          <div class="row d-flex justify-content-around" id="filterRow">
-            <div class="col-2">
-              <button type="button" class="btn btn-dark btn-sm">Best</button>
-            </div>
-            <div class="col-2">
-              <button type="button" class="btn btn-dark btn-sm">Hot</button>
-            </div>
-            <div class="col-2">
-              <button type="button" class="btn btn-dark btn-sm">New</button>
-            </div>
-            <div class="col-2">
-              <button type="button" class="btn btn-dark btn-sm">Top</button>
-            </div>
-            <div class="col-4"></div>
+          <div class="row d-flex justify-content-center" id="aboutRow">
+            Find games happening in your area, or post and share one of your
+            own!
           </div>
-          <div class="row post">
-            <div
-              class="col-1 voteCol d-flex flex-column justify-content-start align-items-center"
-            >
-              <img
-                src="img/64px-White_arrow_up.svg.png"
-                class="img-fluid"
-                id="upVote"
-              />
-              <span id="voteCount">538</span>
-              <img
-                src="img/64px-White_arrow_down.svg.png"
-                class="img-fluid"
-                id="downVote"
-              />
+          <div class="row d-flex justify-content-center" id="signLogRow">
+            <div class="d-flex justify-content-center">
+              <a href="#">Sign Up/Log In</a>
             </div>
-            <div class="col-11 postCol">
+          </div>
+          <div class="row d-flex justify-content-center" id="filterRow">
+            <div class="row btmMrgn">
+              <div class="col-2 bold">Sport</div>
+              <div class="col-10">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Filter by sport - or see all sports</option>
+                  <option value="1">Basketball</option>
+                  <option value="2">Kickball</option>
+                  <option value="3">Football</option>
+                  <option value="3">Volleyball</option>
+                  <option value="3">Softball</option>
+                </select>
+              </div>
+            </div>
+            <div class="row btmMrgn">
+              <div class="col-2 bold">Distance</div>
+              <div class="col-10">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Filter by distance</option>
+                  <option value="1">Less than 1 mile</option>
+                  <option value="2">Less than 10 miles</option>
+                  <option value="3">Less than 50 miles</option>
+                </select>
+              </div>
+            </div>
+            <div class="row btmMrgn">
+              <div class="col-2 bold">Surface</div>
+              <div class="col-10">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Filter by surface type</option>
+                  <option value="1">Indoor</option>
+                  <option value="2">Outdoor</option>
+                  <option value="3">Court (Indoor)</option>
+                  <option value="2">Court (Outdoor)</option>
+                  <option value="2">Turf</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2 bold">When</div>
+              <div class="col-10">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Filter by date</option>
+                  <option value="1">Today</option>
+                  <option value="2">This week</option>
+                  <option value="3">This month</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 gameColumn d-flex justify-content-center">
+          <div class="row d-flex flex-column">
+            <div class="col gameCard">
               <div class="row">
-                <div class="col-2 page">
-                  <span
-                    ><img src="img/communityIcon_4s2v8euutis11.png" id="rIcon"
-                  /></span>
-                  r/stocks
-                </div>
-                <div class="col-10 postedBy d-flex align-items-center">
-                  - Posted by u/catGangLock 22 hours ago
-                </div>
+                <div class="col-2 bold">Sport:</div>
+                <div class="col">Basketball</div>
               </div>
               <div class="row">
-                <div class="col-6 postTitle">
-                  Should I invest in Meta or Amazon?
-                </div>
-                <div class="col-6">
-                  <button type="button" class="btn btn-secondary btn-sm">
-                    Advice
-                  </button>
-                </div>
+                <div class="col-2 bold">Surface:</div>
+                <div class="col">Court - Indoor</div>
               </div>
               <div class="row">
-                <div>
+                <div class="col-2 bold">Location:</div>
+                <div class="col">Fayetteville YMCA</div>
+              </div>
+              <div class="row">
+                <div class="col-2 bold">Date:</div>
+                <div class="col">11/12/22 - 7:30PM</div>
+              </div>
+              <div class="row" id="detailRow">
+                <div class="col bold">Details</div>
+              </div>
+              <div class="row">
+                <div class="col">
                   <p>
-                    I have a few hundred to spare, and was checking out a couple
-                    of stocks when I came across Meta. It looks pretty
-                    promising, but Amazon also looks pretty good. I don't want
-                    to invest too much, so I can only afford 1 share. Any
-                    recommendations/help?
+                    Courts are open from 7:30 to 9:30 PM. There are 3 indoor
+                    courts at this location. The goal is to run games of 5, full
+                    court. All are welcome.
                   </p>
                 </div>
               </div>
+            </div>
+            <div class="col gameCard">
               <div class="row">
-                <div class="col-3">
-                  <span class="material-symbols-outlined"> chat_bubble </span>
-                </div>
-                <div class="col-2">
-                  <span class="material-symbols-outlined"> redeem </span>
-                </div>
-                <div class="col-2">
-                  <span class="material-symbols-outlined">
-                    google_plus_reshare
-                  </span>
-                </div>
-                <div class="col-5">
-                  <span class="material-symbols-outlined"> bookmark </span>
+                <div class="col-2 bold">Sport:</div>
+                <div class="col">Kickball</div>
+              </div>
+              <div class="row">
+                <div class="col-2 bold">Surface:</div>
+                <div class="col">Field - Outdoor</div>
+              </div>
+              <div class="row">
+                <div class="col-2 bold">Location:</div>
+                <div class="col">Comstock Park</div>
+              </div>
+              <div class="row">
+                <div class="col-2 bold">Date:</div>
+                <div class="col">11/30/22 - 4:00PM</div>
+              </div>
+              <div class="row" id="detailRow">
+                <div class="col bold">Details</div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>
+                    Hi! It will be unseasonably warm on this date so me and my
+                    friends are planning on heading down to play, and anyone is
+                    welcome to join!
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row post">
-            <div class="col"><!--Post 2 --></div>
-          </div>
         </div>
-        <div class="col-4"><!--Communities Column --></div>
-        <div class="col-1"><!--Spacer --></div>
       </div>
     </div>
   </body>
